@@ -2,16 +2,16 @@
 <html>
 <head>
   <title>Website</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 
-<main class=main>
+<main class="main" id="main">
 <%= yield %>
 </main>
 
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
